@@ -72,7 +72,7 @@ with open(file_path, 'r', encoding='utf-8') as file:
     text = file.read()
 
 # Adjust character speed based on updated WPM
-CHARS_PER_SECOND = WORDS_PER_MINUTE * 5 / 60
+CHARS_PER_SECOND = WORDS_PER_MINUTE * 60
 DELAY_BETWEEN_CHARS = 1 / CHARS_PER_SECOND
 
 # Split text into sentences for natural pauses
