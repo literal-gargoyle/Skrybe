@@ -5,8 +5,8 @@ from tkinter import Tk, Label, Entry, Button, filedialog, IntVar
 import keyboard  # Requires `pip install keyboard`
 
 # Constants for typing behavior
-WORDS_PER_MINUTE = 90  # Default value
-CHARS_PER_SECOND = WORDS_PER_MINUTE * 5 / 60
+WORDS_PER_MINUTE = 25  # Default value
+CHARS_PER_SECOND = WORDS_PER_MINUTE * 60
 DELAY_BETWEEN_CHARS = 1 / CHARS_PER_SECOND
 BREAK_AFTER_SENTENCES = 5  # Default value
 BREAK_TIME = 2  # Default value
