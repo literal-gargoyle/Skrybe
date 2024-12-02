@@ -24,7 +24,7 @@ pip install pyautogui keyboard
 
 1. Get [main.py](https://github.com/literal-gargoyle/Skrybe/blob/main/main.py)
 2. Import the needed dependencies from the console. you will first need to install [python3](https://www.python.org/downloads/).
-3. Get the text you want in a .txt format; just make a new file a copy the tetx you want into it.
+3. Get the text you want in a .txt format; just make a new file a copy the text you want into it.
 4. Copy the file path of the text file. Click the file once and then Copy it (Ctrl+c)
 5. Run the program, using python. If you want to run it from the console (EI no ide, run this command
 ```bash
