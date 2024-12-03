@@ -5,8 +5,8 @@ from tkinter import Tk, Label, Entry, Button, filedialog, IntVar
 import keyboard  # Requires `pip install keyboard`
 
 # Constants for typing behavior
-WORDS_PER_MINUTE = 90  # Default value
-CHARS_PER_SECOND = WORDS_PER_MINUTE * 5 / 60
+WORDS_PER_MINUTE = 25  # Default value
+CHARS_PER_SECOND = WORDS_PER_MINUTE * 60
 DELAY_BETWEEN_CHARS = 1 / CHARS_PER_SECOND
 BREAK_AFTER_SENTENCES = 5  # Default value
 BREAK_TIME = 2  # Default value
@@ -72,11 +72,11 @@ with open(file_path, 'r', encoding='utf-8') as file:
     text = file.read()
 
 # Adjust character speed based on updated WPM
-CHARS_PER_SECOND = WORDS_PER_MINUTE * 5 / 60
+CHARS_PER_SECOND = WORDS_PER_MINUTE * 60
 DELAY_BETWEEN_CHARS = 1 / CHARS_PER_SECOND
 
 # Split text into sentences for natural pauses
-sentences = text.split('.')
+sentences = text.split('. ')
 
 sentence_count = 0
 
