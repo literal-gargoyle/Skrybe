@@ -76,7 +76,7 @@ CHARS_PER_SECOND = WORDS_PER_MINUTE * 5 / 60
 DELAY_BETWEEN_CHARS = 1 / CHARS_PER_SECOND
 
 # Split text into sentences for natural pauses
-sentences = text.split('.')
+sentences = text.split('. ')
 
 sentence_count = 0
 
