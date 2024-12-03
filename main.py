@@ -5,7 +5,7 @@ from tkinter import Tk, Label, Entry, Button, filedialog, IntVar
 import keyboard  # Requires `pip install keyboard`
 
 # Constants for typing behavior
-WORDS_PER_MINUTE = 90  # Default value
+WORDS_PER_MINUTE = 25  # Default value
 CHARS_PER_SECOND = WORDS_PER_MINUTE * 5 / 60
 DELAY_BETWEEN_CHARS = 1 / CHARS_PER_SECOND
 BREAK_AFTER_SENTENCES = 5  # Default value
@@ -18,7 +18,7 @@ def open_config_window():
     config_window.title("Typing Configuration")
 
     # Variables to hold user inputs
-    wpm_var = IntVar(value=90)
+    wpm_var = IntVar(value=25)
     break_after_sentences_var = IntVar(value=5)
     break_time_var = IntVar(value=2)
 
